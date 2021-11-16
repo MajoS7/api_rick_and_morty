@@ -2,6 +2,8 @@ const contenedor = document.querySelector('#container');
 const allcards = document.querySelector('#allCards');
 const todas = document.querySelector('#todas');
 const vacio = document.querySelector('#vacio');
+const footer= document.querySelector('#posicionfooter');
+
 
 const URL = 'https://rickandmortyapi.com/api/character/';
 
@@ -43,13 +45,16 @@ contenedor.addEventListener('change', (event) => {
                 image.setAttribute('src', Element.image);
                 titule.textContent=Element.name;
                 card.classList.add('card');
+                
 
                 card.appendChild(image);
                 card.appendChild(titule);
                 allcards.appendChild(card);
+                footer.classList.add('posicionfooter');
             }
             if (event.target.value==vacio.value){
                 allcards.innerHTML='';
+                footer.classList.remove('posicionfooter');
             }
             if (event.target.value==todas.value){
                 allcards.innerHTML='';
@@ -67,7 +72,9 @@ contenedor.addEventListener('change', (event) => {
                     allcards.appendChild(card);
 
                 }
+                
                 )
+                footer.classList.add('posicionfooter');
                 
             }
         })

@@ -7,7 +7,7 @@ html, body{
     width: 100%;
     height: 100%;
     background-color: #0a0a0a;
-    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Baloo Bhai 2', cursive;  
 }
 
 header{
@@ -69,5 +69,19 @@ select{
     border-radius: 12px;
     transition: all 0.25s ease;
 }
+footer{
+    margin-top:57vh ;
+    background-color:#C0C0C0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 5vh;
+    font-size: 1.3vw;
 
+}
+
+.posicionfooter{
+    margin-top: 2vh;
+}
 
