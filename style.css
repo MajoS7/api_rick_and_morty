@@ -13,13 +13,20 @@ html, body{
 header{
     height: 20%;
     display: flex;
+
+     
+    
+}
+h1{
+    
+    display: flex;
     justify-content: center;
     align-items: center;
     color:#10b0c8;
     font-family: 'Creepster', cursive;
-    font-size: 4vh;
-    -webkit-text-stroke: 0.1vh #d7e170; 
-    
+    -webkit-text-stroke: 0.1vh #d7e170;
+    font-size: 5vw;
+    width: 100%;
 }
 
 main{
