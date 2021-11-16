@@ -42,6 +42,7 @@ contenedor.addEventListener('change', (event) => {
 
                 image.setAttribute('src', Element.image);
                 titule.textContent=Element.name;
+                card.classList.add('card');
 
                 card.appendChild(image);
                 card.appendChild(titule);
@@ -51,16 +52,23 @@ contenedor.addEventListener('change', (event) => {
                 allcards.innerHTML='';
             }
             if (event.target.value==todas.value){
-                const card = document.createElement('div');
-                const image = document.createElement('img');
-                const titule = document.createElement('h2');
+                allcards.innerHTML='';
+                lista.map (Element=>{
+                    const card = document.createElement('div');
+                    const image = document.createElement('img');
+                    const titule = document.createElement('h2');
 
-                image.setAttribute('src', Element.image);
-                titule.textContent=Element.name;
+                    image.setAttribute('src', Element.image);
+                    titule.textContent=Element.name;
+                    card.classList.add('card');
 
-                card.appendChild(image);
-                card.appendChild(titule);
-                allcards.appendChild(card);
+                    card.appendChild(image);
+                    card.appendChild(titule);
+                    allcards.appendChild(card);
+
+                }
+                )
+                
             }
         })
         
