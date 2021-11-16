@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Creepster&display=swap');
-*{padding: 0%;margin: 0%;}
+*{padding: 0%;margin: 0%;
+    
+}
 
 html, body{
     width: 100%;
     height: 100%;
     background-color: #0a0a0a;
+    font-family: 'Baloo Bhai 2', cursive;
 }
 
 header{
@@ -27,7 +30,6 @@ main{
 
 .card{
     color: #10b0c8;
-    font-family: 'Baloo Bhai 2', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,3 +46,21 @@ main{
     width: 100%;
 
 }
+
+.card img{
+    border-radius: 20px;
+}
+
+select{
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    padding: 2vh 4vh;
+    color:#7b7b7b;
+    background: #f0f0f0;
+    font-size: 100%;
+    border-radius: 12px;
+    transition: all 0.25s ease;
+}
+
+
